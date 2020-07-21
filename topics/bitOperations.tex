@@ -1,0 +1,17 @@
+\section{Bit Manipultation}
+\subsection*{Bit Operations}
+ 
+\par \textbf{AND Operation} The AND operation $x\&y$ produces a number that has one bits in positions where both x and y have one bits. For example, $22\;\&\;26 = 18$: 
+$$10110\; (22)\; \boldsymbol{\&} \; 11010\;(26) = 10010\; (18)$$
+
+\par \textbf{OR Operation} The or operation $x|y$ produces a number that has one bits in positions where at least one of x and y have one bits. For example, $22\;|\;26 = 30$: 
+$$10110\; (22)\; \boldsymbol{|} \; 11010\;(26) = 11110\; (30)$$
+
+\par \textbf{XOR Operation} The xor operation $x \wedge y$ produces a number that has one bits in positions where exactly one of x and y have one bits. For example, $22 \wedge 26 = 12$:
+$$10110\;(22) \wedge 11010\;(26) = 01100\;(12)$$
+
+\par \textbf{NOT Operation} The not operation $\sim x$ produces a number where all the bits of x have been inverted. The formula $\sim x = -x -1$ holds, for example, $\sim 29 = -30$. The result of the not operation at the bit level depends on the length of the bit representation because the operation inverts all bits. For example, if the numbers are 32-bit int numbers, the result is as follows:
+\begin{gather*}
+x = \ \;29\; 00000000000000000000000000011101 \\ 
+\hat{}x = -30\; 11111111111111111111111111100010
+\end{gather*}
