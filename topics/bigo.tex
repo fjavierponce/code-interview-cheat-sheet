@@ -12,12 +12,12 @@ The time complexity of an algorithm estimates how much time the algorithm will u
 
 \par \bigobold{n} A linear algorithm goes through the input a constant number of times. This is often the best possible time complexity, because it is usually necessary to access each input element at least once before reporting the answer.
 
-\par \bigobold{n log n} This time complexity often indicates that the algorithm sorts the input, because the time complexity of efficient sorting algorithms is \bigo{nlog n}. Another possibility is that the algorithm uses a data structure where each operation takes \bigo{log n} time.
+\par \bigobold{n \log n} This time complexity often indicates that the algorithm sorts the input, because the time complexity of efficient sorting algorithms is \bigo{n \log n}. Another possibility is that the algorithm uses a data structure where each operation takes \bigo{\log n} time.
 
-O(n2) A quadratic algorithm often contains two nested loops. It is possible to go through all pairs of the input elements in O(n2) time.
+\par \bigobold{n^2} A quadratic algorithm often contains two nested loops. It is possible to go through all pairs of the input elements in \bigo{n^2} time.
 
-O(n3) A cubic algorithm often contains three nested loops. It is possible to go through all triplets of the input elements in O(n3) time.
+\par \bigobold{n^3} A cubic algorithm often contains three nested loops. It is possible to go through all triplets of the input elements in \bigo{n^3} time.
 
-O(2n) This time complexity often indicates that the algorithm iterates through all subsets of the input elements. %For example, the subsets of {1, 2, 3} are ∅, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, and {1, 2, 3}.
+\par \bigobold{2^n} This time complexity often indicates that the algorithm iterates through all subsets of the input elements. For example, the subsets of \{1, 2, 3\} are $\emptyset$, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, and \{1, 2, 3\}.
 
-O(n!) This time complexity often indicates that the algorithm iterates through all permutations of the input elements. %For example, the permutations of {1, 2, 3} are (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), and (3,2,1).
+\par \bigobold{n!} This time complexity often indicates that the algorithm iterates through all permutations of the input elements. For example, the permutations of \{1, 2, 3\} are (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), and (3,2,1).
